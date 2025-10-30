@@ -1,0 +1,22 @@
+.NavList {
+  display: flex;
+}
+
+.BasketItems {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 30px;
+  list-style: none;
+  padding: 0;
+}
+
+.BasketItems img {
+  max-height: 250px;
+}
+
+.BasketItems .BasketItem .BasketItemContent {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}

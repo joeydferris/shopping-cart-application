@@ -1,0 +1,18 @@
+# Set default line ending normalization for text files
+* text=auto
+
+# Mark certain file types as binary to prevent Git from trying to diff or merge them
+*.png binary
+*.jpg binary
+*.gif binary
+*.pdf binary
+
+# Ensure specific script files always have Unix-style line endings (LF)
+*.sh eol=lf
+*.py eol=lf
+
+# Force specific configuration files to use native line endings on checkout
+config.ini text eol=crlf
+
+# Define a custom diff strategy for specific file types (e.g., for images with Exif data)
+*.tiff diff=exif

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Professional Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
+    <dv class="Page">
+      <header class="Header">
+        <div class="Logo">
+          <span class="Icon"></span>
+          <h1 class="Heading">Shopping Cart</h1>
+        </div>
+        <div class="SearchBar">
+          <input type="text" placeholder="Search..." class="SearchInput" />
+        </div>
+        <nav class="Nav">
+          <ul class="NavList">
+            <li class="NavListItem">
+              <span class="Icon"></span>
+              <a href="/orders" class="Link">Orders</a>
+            </li>
+            <li class="NavListItem">
+              <span class="Icon"></span>
+              <a href="/saved" class="Link">Saved</a>
+            </li>
+            <li class="NavListItem">
+              <span class="Icon"></span>
+              <a href="/cart" class="Link">My Cart</a>
+            </li>
+            <li class="NavListItem">
+              <span class="Icon"></span>
+              <a href="/login" class="Link">Sign In</a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+
+      <div class="Container">
+        <section class="Container--Basket">
+          <div class="HeadingContainer">
+            <h2 class="Heading Heading--Large">Your cart</h2>
+            <div class="Heading--Medium">
+              <p><span class="ItemCount"></span> items in your cart.</p>
+            </div>
+          </div>
+          <div class="CartItems">
+            <ul class="BasketItems"></ul>
+          </div>
+        </section>
+      </div>
+    </dv>
+    <footer></footer>
+    <script src="bundle.js"></script>
+  </body>
+</html>
